@@ -1,6 +1,6 @@
 # AstraEdits — Website
 
-A fast, dark-cinematic, multi-page static site for the AstraEdits video editing agency.
+A fast, dark-cinematic, multi-page static site for the AstraEdits video editing agency. Live at astraedits.com, auto-deployed via Vercel + GitHub.
 
 ## Files
 - `index.html` — Home (hero, services, process, floating client-logo marquee, CTA)
