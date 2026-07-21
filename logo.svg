@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 90" role="img" aria-label="AstraEdits">
+  <defs>
+    <linearGradient id="ae-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c5cff"/>
+      <stop offset="0.55" stop-color="#00e0d3"/>
+      <stop offset="1" stop-color="#e9c46a"/>
+    </linearGradient>
+  </defs>
+  <!-- Icon: rounded tile with a star-spark + play cut -->
+  <g>
+    <rect x="6" y="12" width="66" height="66" rx="18" fill="#0d0d12" stroke="rgba(255,255,255,0.08)"/>
+    <!-- 4-point sparkle (astra = star) -->
+    <path d="M39 24 C41 36 43 38 55 40 C43 42 41 44 39 56 C37 44 35 42 23 40 C35 38 37 36 39 24 Z" fill="url(#ae-grad)"/>
+    <!-- small accent spark -->
+    <path d="M57 52 C58 57 58.5 57.5 63 59 C58.5 60.5 58 61 57 66 C56 61 55.5 60.5 51 59 C55.5 57.5 56 57 57 52 Z" fill="#00e0d3" opacity="0.9"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="88" y="58" font-family="'Space Grotesk',Inter,sans-serif" font-size="34" font-weight="700" letter-spacing="0.5">
+    <tspan fill="#f4f4f6">Astra</tspan><tspan fill="url(#ae-grad)">Edits</tspan>
+  </text>
+</svg>
