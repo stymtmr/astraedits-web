@@ -53,4 +53,24 @@ document.addEventListener('DOMContentLoaded', () => {
       reel.dataset.loaded = '1';
     });
   });
+
+  // Hero showreel: fade in only once it can actually play (else the fallback shows)
+  document.querySelectorAll('.hero-reel video').forEach(v => {
+    const reveal = () => v.classList.add('loaded');
+    if (v.readyState >= 2) reveal();
+    v.addEventListener('loadeddata', reveal);
+    v.addEventListener('canplay', reveal);
+  });
+
+  // Self-hosted reel tiles: autoplay muted loop only while in view (saves bandwidth, feels premium)
+  const vids = document.querySelectorAll('video[data-autoplay]');
+  if (vids.length) {
+    const vIO = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        const v = e.target;
+        if (e.isIntersecting) { v.play().catch(() => {}); } else { v.pause(); }
+      });
+    }, { threshold: 0.35 });
+    vids.forEach(v => vIO.observe(v));
+  }
 });

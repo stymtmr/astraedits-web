@@ -3,15 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AstraEdits — Video Editing That Stops the Scroll</title>
-<meta name="description" content="AstraEdits is a video editing agency crafting scroll-stopping reels, YouTube edits, and brand films for creators and businesses.">
-<meta property="og:title" content="AstraEdits — Video Editing That Stops the Scroll">
-<meta property="og:description" content="Scroll-stopping reels, YouTube edits, and brand films for creators and businesses.">
+<title>AstraEdits — Premium Video Editing for Creators &amp; Brands</title>
+<meta name="description" content="AstraEdits is a premium video editing studio crafting scroll-stopping reels, YouTube edits, and brand films for creators and businesses.">
+<meta property="og:title" content="AstraEdits — Premium Video Editing">
+<meta property="og:description" content="Scroll-stopping reels, YouTube edits, and brand films for creators and brands.">
 <meta property="og:type" content="website">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@300,400,500,600,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,7 +18,7 @@
 <!-- NAV -->
 <nav class="nav">
   <div class="wrap">
-    <a href="index.html" class="brand"><img src="logo.svg" alt="AstraEdits" style="height:38px;width:auto"></a>
+    <a href="index.html" class="brand"><img src="logo.svg" alt="AstraEdits"></a>
     <div class="nav-links">
       <a href="index.html" class="active">Home</a>
       <a href="work.html">Work</a>
@@ -27,20 +26,29 @@
       <a href="contact.html">Contact</a>
       <a href="contact.html" class="btn">Start a project</a>
     </div>
-    <button class="hamb" aria-label="Menu">&#9776;</button>
+    <button class="hamb" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
 </nav>
 
 <!-- HERO -->
 <header class="hero">
   <div class="wrap">
-    <span class="eyebrow reveal"><span class="live"></span> Now taking new clients — 2026</span>
-    <h1 class="reveal">We turn raw footage into<br><span class="g">scroll-stopping stories</span></h1>
-    <p class="lead reveal">AstraEdits is a video editing studio for creators and brands. Reels, YouTube edits, ads and brand films — edited to keep eyes glued and grow your audience.</p>
+    <span class="eyebrow reveal"><span class="live"></span> Now taking select clients — 2026</span>
+    <h1 class="reveal">Raw footage, refined into<br><span class="g">scroll-stopping stories</span></h1>
+    <p class="lead reveal">A premium video editing studio for creators and brands. Reels, YouTube, ads and brand films — crafted to hold attention and grow your audience.</p>
     <div class="hero-cta reveal">
-      <a href="contact.html" class="btn">Start a project &rarr;</a>
-      <a href="work.html" class="btn btn-ghost">&#9654; Watch our work</a>
+      <a href="contact.html" class="btn">Start a project</a>
+      <a href="work.html" class="btn btn-ghost"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" style="width:14px;height:14px"><path d="M7 4l14 8-14 8z"/></svg> Watch the reel</a>
     </div>
+
+    <!-- SHOWREEL — drop showreel.mp4 into the repo and it auto-plays here -->
+    <div class="hero-reel reveal">
+      <video autoplay muted loop playsinline preload="metadata">
+        <source src="showreel.mp4" type="video/mp4">
+      </video>
+      <div class="reel-fallback"><img src="logo.svg" alt="AstraEdits" style="height:40px;opacity:.5"></div>
+    </div>
+
     <div class="hero-stats">
       <div class="s reveal"><div class="num" data-count="500" data-suffix="+">0</div><div class="lbl">Videos Edited</div></div>
       <div class="s reveal"><div class="num" data-count="120" data-suffix="M+">0</div><div class="lbl">Views Generated</div></div>
@@ -51,9 +59,9 @@
 </header>
 
 <!-- CLIENT LOGO MARQUEE -->
-<section class="section-pad" style="padding-top:30px">
+<section class="section-pad" style="padding-top:40px">
   <div class="wrap">
-    <p class="reveal" style="text-align:center;color:var(--muted);letter-spacing:2px;text-transform:uppercase;font-size:.78rem;margin-bottom:26px">Trusted by creators &amp; brands</p>
+    <p class="reveal" style="text-align:center;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;font-size:.76rem;margin-bottom:30px;font-weight:500">Trusted by creators &amp; brands</p>
   </div>
   <div class="marquee reveal">
     <div class="marquee-track">
@@ -65,7 +73,6 @@
       <div class="logo-chip"><span class="badge">A</span> Apex Creators</div>
       <div class="logo-chip"><span class="badge">B</span> Bold &amp; Co</div>
       <div class="logo-chip"><span class="badge">L</span> Lumen</div>
-      <!-- duplicate set for seamless loop -->
       <div class="logo-chip"><span class="badge">N</span> Nova Media</div>
       <div class="logo-chip"><span class="badge">P</span> PixelPeak</div>
       <div class="logo-chip"><span class="badge">V</span> Viral Labs</div>
@@ -75,7 +82,7 @@
       <div class="logo-chip"><span class="badge">L</span> Lumen</div>
     </div>
   </div>
-  <div class="marquee rev reveal" style="margin-top:16px">
+  <div class="marquee rev reveal" style="margin-top:14px">
     <div class="marquee-track">
       <div class="logo-chip"><span class="badge">G</span> GrowthHouse</div>
       <div class="logo-chip"><span class="badge">R</span> Reel Rush</div>
@@ -102,12 +109,30 @@
       <p>From punchy short-form to cinematic long-form — we handle the full edit so you can focus on creating.</p>
     </div>
     <div class="grid-3">
-      <div class="card reveal"><div class="ico">&#9889;</div><h3>Short-Form Reels</h3><p>Fast-paced Instagram Reels, TikToks &amp; YouTube Shorts with hooks, captions, sound design and trend-aware pacing.</p></div>
-      <div class="card reveal"><div class="ico">&#127916;</div><h3>YouTube Edits</h3><p>Retention-optimised long-form edits — clean cuts, b-roll, motion graphics and thumbnails that earn the click.</p></div>
-      <div class="card reveal"><div class="ico">&#127775;</div><h3>Brand Films &amp; Ads</h3><p>Polished promos, product ads and brand stories with cinematic color grading and pro sound design.</p></div>
-      <div class="card reveal"><div class="ico">&#127908;</div><h3>Podcast Editing</h3><p>Full-episode edits plus clip-outs — turn one recording into a week of shareable social content.</p></div>
-      <div class="card reveal"><div class="ico">&#127912;</div><h3>Motion Graphics</h3><p>Custom animated titles, lower-thirds, transitions and subtitles that make every frame feel premium.</p></div>
-      <div class="card reveal"><div class="ico">&#128260;</div><h3>Full Content Management</h3><p>Hand us the raw footage — we deliver ready-to-post content on a consistent schedule. Truly hands-off.</p></div>
+      <div class="card reveal">
+        <div class="ico"><svg class="icon" viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="3"/><path d="M11 9l4 3-4 3z" fill="currentColor" stroke="none"/></svg></div>
+        <h3>Short-Form Reels</h3><p>Fast-paced Instagram Reels, TikToks &amp; YouTube Shorts with hooks, captions, sound design and trend-aware pacing.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="4"/><path d="M11 9l4 3-4 3z" fill="currentColor" stroke="none"/></svg></div>
+        <h3>YouTube Edits</h3><p>Retention-optimised long-form edits — clean cuts, b-roll, motion graphics and thumbnails that earn the click.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3c.6 3.6 1.4 4.4 5 5-3.6.6-4.4 1.4-5 5-.6-3.6-1.4-4.4-5-5 3.6-.6 4.4-1.4 5-5z"/></svg></div>
+        <h3>Brand Films &amp; Ads</h3><p>Polished promos, product ads and brand stories with cinematic colour grading and pro sound design.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico"><svg class="icon" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M6 11a6 6 0 0 0 12 0"/><path d="M12 17v4M9 21h6"/></svg></div>
+        <h3>Podcast Editing</h3><p>Full-episode edits plus clip-outs — turn one recording into a week of shareable social content.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg></div>
+        <h3>Motion Graphics</h3><p>Custom animated titles, lower-thirds, transitions and subtitles that make every frame feel premium.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico"><svg class="icon" viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 13-6l3 2"/><path d="M20 4v4h-4"/><path d="M20 12a8 8 0 0 1-13 6l-3-2"/><path d="M4 20v-4h4"/></svg></div>
+        <h3>Full Content Management</h3><p>Hand us the raw footage — we deliver ready-to-post content on a consistent schedule. Truly hands-off.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -120,9 +145,9 @@
       <h2>Simple, fast, reliable</h2>
     </div>
     <div class="grid-3">
-      <div class="card reveal"><div class="ico">1</div><h3>Send footage</h3><p>Drop your raw clips via Google Drive, Dropbox or WeTransfer along with a quick brief.</p></div>
-      <div class="card reveal"><div class="ico">2</div><h3>We edit</h3><p>Our editors craft your video with hooks, pacing and sound — first draft usually within 24–48h.</p></div>
-      <div class="card reveal"><div class="ico">3</div><h3>Revise &amp; deliver</h3><p>Free revisions until it's perfect, then final files delivered ready to publish anywhere.</p></div>
+      <div class="card reveal"><span class="step-num">01</span><h3 style="margin-top:12px">Send footage</h3><p>Drop your raw clips via Google Drive, Dropbox or WeTransfer along with a quick brief.</p></div>
+      <div class="card reveal"><span class="step-num">02</span><h3 style="margin-top:12px">We edit</h3><p>Our editors craft your video with hooks, pacing and sound — first draft usually within 24–48h.</p></div>
+      <div class="card reveal"><span class="step-num">03</span><h3 style="margin-top:12px">Revise &amp; deliver</h3><p>Free revisions until it's perfect, then final files delivered ready to publish anywhere.</p></div>
     </div>
   </div>
 </section>
@@ -133,7 +158,7 @@
     <div class="cta-band reveal">
       <h2>Ready to level up your content?</h2>
       <p>Tell us about your project and get a free sample edit. No commitment, no pressure.</p>
-      <a href="contact.html" class="btn">Get started &rarr;</a>
+      <a href="contact.html" class="btn">Get started</a>
     </div>
   </div>
 </section>
@@ -142,8 +167,8 @@
 <footer class="footer">
   <div class="wrap">
     <div>
-      <a href="index.html" class="brand"><img src="logo.svg" alt="AstraEdits" style="height:38px;width:auto"></a>
-      <p class="muted">A video editing studio helping creators and brands grow with scroll-stopping content.</p>
+      <a href="index.html" class="brand"><img src="logo.svg" alt="AstraEdits"></a>
+      <p class="muted">A premium video editing studio helping creators and brands grow with scroll-stopping content.</p>
     </div>
     <div class="cols">
       <div><h5>Explore</h5><a href="index.html">Home</a><a href="work.html">Work</a><a href="index.html#services">Services</a><a href="contact.html">Contact</a></div>
@@ -160,7 +185,7 @@
   </div>
 </footer>
 
-<a href="https://wa.me/919149045423" class="fab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">&#128172;</a>
+<a href="https://wa.me/919149045423" class="fab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 3C6.9 3 3 6.9 3 11.5c0 1.7.6 3.3 1.6 4.7L3.4 21l5-1.3c1.1.5 2.3.8 3.6.8 5.1 0 9-3.9 9-8.5S17.1 3 12 3z"/></svg></a>
 
 <script src="script.js"></script>
 </body>

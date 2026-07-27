@@ -8,9 +8,8 @@
 <meta property="og:title" content="Our Work — AstraEdits">
 <meta property="og:description" content="A showcase of reels, YouTube edits, ads and brand films edited by AstraEdits.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@300,400,500,600,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,7 +17,7 @@
 <!-- NAV -->
 <nav class="nav">
   <div class="wrap">
-    <a href="index.html" class="brand"><img src="logo.svg" alt="AstraEdits" style="height:38px;width:auto"></a>
+    <a href="index.html" class="brand"><img src="logo.svg" alt="AstraEdits"></a>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="work.html" class="active">Work</a>
@@ -26,21 +25,21 @@
       <a href="contact.html">Contact</a>
       <a href="contact.html" class="btn">Start a project</a>
     </div>
-    <button class="hamb" aria-label="Menu">&#9776;</button>
+    <button class="hamb" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
 </nav>
 
 <!-- HERO -->
-<header class="hero" style="padding:80px 0 40px">
+<header class="hero" style="padding:96px 0 44px">
   <div class="wrap">
     <span class="eyebrow reveal"><span class="live"></span> Portfolio</span>
-    <h1 class="reveal" style="font-size:clamp(2.4rem,6vw,4.2rem)">Work that <span class="g">earns attention</span></h1>
-    <p class="lead reveal">A mix of short-form reels, long-form YouTube edits and brand films. YouTube edits play right here — Instagram reels open in a new tab.</p>
+    <h1 class="reveal" style="font-size:clamp(2.5rem,6vw,4.4rem)">Work that <span class="g">earns attention</span></h1>
+    <p class="lead reveal">A mix of short-form reels, long-form YouTube edits and brand films. Tap any tile to play.</p>
   </div>
 </header>
 
 <!-- FILTERS + GRID -->
-<section class="section-pad" style="padding-top:20px">
+<section class="section-pad" style="padding-top:24px">
   <div class="wrap">
     <div class="filters reveal">
       <button class="filter active" data-cat="all">All</button>
@@ -50,86 +49,97 @@
     </div>
 
     <div class="work-grid">
-      <!-- ===== Instagram reels: open on Instagram in a new tab ===== -->
+      <!--
+        ===== TILE TYPES (for future edits) =====
+        1) Self-hosted autoplay reel (premium short-form). Drop MP4s in /reels and a poster in /posters:
+           <div class="reel reveal" data-cat="reels">
+             <video class="thumb" muted loop playsinline preload="metadata" poster="posters/x.jpg" data-autoplay><source src="reels/x.mp4" type="video/mp4"></video>
+             <div class="meta"><span class="tag">Reel</span><h4>Title</h4></div>
+           </div>
+        2) YouTube tile (long-form): set data-yt to the video ID
+        3) Instagram tile: links out to the reel
+      -->
+
+      <!-- Instagram reel -->
       <a class="reel ig reveal" data-cat="reels" href="https://www.instagram.com/share/BAUrqxTo2p" target="_blank" rel="noopener" style="display:block">
-        <div class="ph"><div class="play">&#8599;</div></div>
+        <div class="ph"><div class="ig-glyph"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="#fff" stroke="none"/></svg></div></div>
         <div class="meta"><span class="tag">Reel &middot; Instagram</span><h4>Short-Form Edit</h4></div>
       </a>
 
-      <!-- ===== YouTube edits: play inline (real thumbnail) ===== -->
+      <!-- YouTube edit (plays inline) -->
       <div class="reel wide reveal" data-cat="youtube" data-yt="nDJVI4G_YFM">
         <img class="thumb" src="https://img.youtube.com/vi/nDJVI4G_YFM/hqdefault.jpg" alt="">
-        <div class="ph" style="background:linear-gradient(0deg,rgba(0,0,0,.35),rgba(0,0,0,.1))"><div class="play">&#9654;</div></div>
+        <div class="ph" style="background:linear-gradient(0deg,rgba(0,0,0,.4),rgba(0,0,0,.1))"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
         <div class="meta"><span class="tag">YouTube &middot; Long-Form</span><h4>Family Vlog Edit</h4></div>
       </div>
 
       <a class="reel ig reveal" data-cat="reels" href="https://www.instagram.com/share/BAPoEFdW23" target="_blank" rel="noopener" style="display:block">
-        <div class="ph"><div class="play">&#8599;</div></div>
+        <div class="ph"><div class="ig-glyph"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="#fff" stroke="none"/></svg></div></div>
         <div class="meta"><span class="tag">Reel &middot; Instagram</span><h4>Short-Form Edit</h4></div>
       </a>
 
       <a class="reel ig reveal" data-cat="reels" href="https://www.instagram.com/reel/DYwsnc4pceZ/" target="_blank" rel="noopener" style="display:block">
-        <div class="ph"><div class="play">&#8599;</div></div>
+        <div class="ph"><div class="ig-glyph"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="#fff" stroke="none"/></svg></div></div>
         <div class="meta"><span class="tag">Reel &middot; Instagram</span><h4>Fitness Transformation</h4></div>
       </a>
 
       <div class="reel wide reveal" data-cat="youtube" data-yt="pf_GuEqt2nY">
         <img class="thumb" src="https://img.youtube.com/vi/pf_GuEqt2nY/hqdefault.jpg" alt="">
-        <div class="ph" style="background:linear-gradient(0deg,rgba(0,0,0,.35),rgba(0,0,0,.1))"><div class="play">&#9654;</div></div>
+        <div class="ph" style="background:linear-gradient(0deg,rgba(0,0,0,.4),rgba(0,0,0,.1))"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
         <div class="meta"><span class="tag">YouTube &middot; Tech</span><h4>Tech Review Edit</h4></div>
       </div>
 
       <a class="reel ig reveal" data-cat="reels" href="https://www.instagram.com/share/BAAjfcGZj5" target="_blank" rel="noopener" style="display:block">
-        <div class="ph"><div class="play">&#8599;</div></div>
+        <div class="ph"><div class="ig-glyph"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="#fff" stroke="none"/></svg></div></div>
         <div class="meta"><span class="tag">Reel &middot; Instagram</span><h4>Short-Form Edit</h4></div>
       </a>
 
       <div class="reel reveal" data-cat="reels" data-yt="LLvOxCvfuF8">
         <img class="thumb" src="https://img.youtube.com/vi/LLvOxCvfuF8/hqdefault.jpg" alt="">
-        <div class="ph" style="background:linear-gradient(0deg,rgba(0,0,0,.35),rgba(0,0,0,.1))"><div class="play">&#9654;</div></div>
+        <div class="ph" style="background:linear-gradient(0deg,rgba(0,0,0,.4),rgba(0,0,0,.1))"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
         <div class="meta"><span class="tag">Short &middot; YouTube</span><h4>YouTube Short</h4></div>
       </div>
 
       <div class="reel wide reveal" data-cat="youtube" data-yt="F-TbGRzIYak">
         <img class="thumb" src="https://img.youtube.com/vi/F-TbGRzIYak/hqdefault.jpg" alt="">
-        <div class="ph" style="background:linear-gradient(0deg,rgba(0,0,0,.35),rgba(0,0,0,.1))"><div class="play">&#9654;</div></div>
+        <div class="ph" style="background:linear-gradient(0deg,rgba(0,0,0,.4),rgba(0,0,0,.1))"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
         <div class="meta"><span class="tag">YouTube &middot; Long-Form</span><h4>Podcast Edit</h4></div>
       </div>
 
       <a class="reel ig reveal" data-cat="reels" href="https://www.instagram.com/share/BASaM9QvBN" target="_blank" rel="noopener" style="display:block">
-        <div class="ph"><div class="play">&#8599;</div></div>
+        <div class="ph"><div class="ig-glyph"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="#fff" stroke="none"/></svg></div></div>
         <div class="meta"><span class="tag">Reel &middot; Instagram</span><h4>Short-Form Edit</h4></div>
       </a>
 
       <a class="reel ig reveal" data-cat="ads" href="https://www.instagram.com/reel/DYMaHq8TNym/" target="_blank" rel="noopener" style="display:block">
-        <div class="ph"><div class="play">&#8599;</div></div>
+        <div class="ph"><div class="ig-glyph"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="#fff" stroke="none"/></svg></div></div>
         <div class="meta"><span class="tag">Promo Ad &middot; Instagram</span><h4>Brand Promo Ad</h4></div>
       </a>
 
       <div class="reel wide reveal" data-cat="youtube" data-yt="acw8g4BwxjM">
         <img class="thumb" src="https://img.youtube.com/vi/acw8g4BwxjM/hqdefault.jpg" alt="">
-        <div class="ph" style="background:linear-gradient(0deg,rgba(0,0,0,.35),rgba(0,0,0,.1))"><div class="play">&#9654;</div></div>
+        <div class="ph" style="background:linear-gradient(0deg,rgba(0,0,0,.4),rgba(0,0,0,.1))"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
         <div class="meta"><span class="tag">YouTube &middot; Series</span><h4>Documentary Series Edit</h4></div>
       </div>
 
       <a class="reel ig reveal" data-cat="reels" href="https://www.instagram.com/share/BAPTfHMl_6" target="_blank" rel="noopener" style="display:block">
-        <div class="ph"><div class="play">&#8599;</div></div>
+        <div class="ph"><div class="ig-glyph"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="#fff" stroke="none"/></svg></div></div>
         <div class="meta"><span class="tag">Reel &middot; Instagram</span><h4>Short-Form Edit</h4></div>
       </a>
 
       <a class="reel ig reveal" data-cat="reels" href="https://www.instagram.com/share/BANqLA8dnD" target="_blank" rel="noopener" style="display:block">
-        <div class="ph"><div class="play">&#8599;</div></div>
+        <div class="ph"><div class="ig-glyph"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="#fff" stroke="none"/></svg></div></div>
         <div class="meta"><span class="tag">Reel &middot; Instagram</span><h4>Short-Form Edit</h4></div>
       </a>
 
       <div class="reel wide reveal" data-cat="youtube" data-yt="8J-A5wlx7wQ">
         <img class="thumb" src="https://img.youtube.com/vi/8J-A5wlx7wQ/hqdefault.jpg" alt="">
-        <div class="ph" style="background:linear-gradient(0deg,rgba(0,0,0,.35),rgba(0,0,0,.1))"><div class="play">&#9654;</div></div>
+        <div class="ph" style="background:linear-gradient(0deg,rgba(0,0,0,.4),rgba(0,0,0,.1))"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
         <div class="meta"><span class="tag">YouTube</span><h4>Signature Showreel</h4></div>
       </div>
 
       <a class="reel ig reveal" data-cat="reels" href="https://www.instagram.com/share/BAObhSD-hX" target="_blank" rel="noopener" style="display:block">
-        <div class="ph"><div class="play">&#8599;</div></div>
+        <div class="ph"><div class="ig-glyph"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="#fff" stroke="none"/></svg></div></div>
         <div class="meta"><span class="tag">Reel &middot; Instagram</span><h4>Short-Form Edit</h4></div>
       </a>
     </div>
@@ -142,7 +152,7 @@
     <div class="cta-band reveal">
       <h2>Want your project in this gallery?</h2>
       <p>Let's create something your audience can't scroll past.</p>
-      <a href="contact.html" class="btn">Start a project &rarr;</a>
+      <a href="contact.html" class="btn">Start a project</a>
     </div>
   </div>
 </section>
@@ -151,8 +161,8 @@
 <footer class="footer">
   <div class="wrap">
     <div>
-      <a href="index.html" class="brand"><img src="logo.svg" alt="AstraEdits" style="height:38px;width:auto"></a>
-      <p class="muted">A video editing studio helping creators and brands grow with scroll-stopping content.</p>
+      <a href="index.html" class="brand"><img src="logo.svg" alt="AstraEdits"></a>
+      <p class="muted">A premium video editing studio helping creators and brands grow with scroll-stopping content.</p>
     </div>
     <div class="cols">
       <div><h5>Explore</h5><a href="index.html">Home</a><a href="work.html">Work</a><a href="index.html#services">Services</a><a href="contact.html">Contact</a></div>
@@ -169,7 +179,7 @@
   </div>
 </footer>
 
-<a href="https://wa.me/919149045423" class="fab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">&#128172;</a>
+<a href="https://wa.me/919149045423" class="fab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 3C6.9 3 3 6.9 3 11.5c0 1.7.6 3.3 1.6 4.7L3.4 21l5-1.3c1.1.5 2.3.8 3.6.8 5.1 0 9-3.9 9-8.5S17.1 3 12 3z"/></svg></a>
 
 <script src="script.js"></script>
 </body>
